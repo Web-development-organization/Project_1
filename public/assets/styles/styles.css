@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Raleway:wght@300&display=swap');
+
+:root{
+    --color_1: #373503;
+    --color_2: #7C781F;
+    --color_3: #A7BA44;
+    --color_4: #BD5F64;
+    --color_5: #E7E9DE;
+    --font-title: 'Fascinate', cursive;
+    --font-text: 'Raleway', sans-serif;
+}
+
+/* Here we define all general styles */
+body{
+    font-family: var(--font-title);
+    margin: 0;
+
+    scroll-behavior: smooth !important;
+}
+p, a{
+    font-family: var(--font-text);
+}
+
+/* Header navigation */
+/* Here we define the style to navigation bar to move into landing page */
+#header-placeholder{
+    width: 100vw;
+    height: fit-content;;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--color_4);
+}
+#header-placeholder *{
+    display: grid;
+    padding: 5px;
+    margin: 0;
+
+
+    color: var(--color_5)
+}
+#header-placeholder h1{
+    align-self: center;
+}
+#header-placeholder nav{
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+#header-placeholder nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-placeholder nav li a{
+    text-decoration: none;
+}
+#header-placeholder nav li a:hover{
+    font-weight: bold;
+}
+@media (max-width: 600px){
+    #header-placeholder {
+        display: block;
+        text-align: center;
+    }
+}
+
+
